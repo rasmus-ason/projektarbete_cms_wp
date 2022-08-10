@@ -1,0 +1,108 @@
+/*List accomondation /activities container */
+.list-container {
+    display: flex;
+    position: relative;
+    width: max(300px, 60vw);
+    margin: auto;
+    background-color: #f5f5f5;
+    padding: 3%;
+    border: solid 5px #B8A982;
+    margin-bottom: 3.5%;
+    
+}
+
+.list-text {
+    position: relative;
+    width: 55%;
+}
+
+.list-text ul {
+    margin-top: -10px;
+    height: fit-content;
+}
+
+.list-text ul li {
+    list-style: none;
+    
+    display: block; text-align: center;
+    line-height: 130%;
+    font-size: clamp(0.7rem, 1.1vw, 1rem);
+    
+}
+
+.list-text h3 {
+    margin-right: -8%;
+    color: #B8A982;
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Jacques Francois', serif;
+
+
+}
+
+.list-text a {
+    position: absolute; bottom: 0; right: 0;
+    margin: auto;
+    background-color: rgb(25, 115, 185);
+    text-decoration: none;
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;    
+    width: 90%;
+    border-style: none;
+    margin-bottom: 10px;
+    font-size: clamp(0.7rem, 1.1vw, 1rem);
+    text-transform: uppercase;   
+}
+
+.list-text a:hover {
+    cursor: pointer;
+    background-color: rgb(21, 104, 167);
+}
+
+.list-image {
+    width: 45%;
+}
+
+.list-image img {
+    width: 100%;
+    height: max-content;
+}
+
+/*Hide describing text from list*/
+.hide-p-text p, .hide-p-text table {
+    display: none;
+
+}
+
+.news-text-excerpt p {
+   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .list-container {
+        display: block;
+        
+    }
+
+    .list-text a {display: none;}
+
+    .list-text, .list-image {
+        width: 100%;
+    }
+
+    .list-text {
+        
+        width: max(170px,40%);
+        margin: auto;
+    }
+
+    .list-text ul li {
+        margin-left: -25%;
+    }
+
+    
+}
+   
+

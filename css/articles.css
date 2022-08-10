@@ -1,0 +1,42 @@
+.news-frontpage-container {
+    width: max(80vw, 300px);
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin: auto;
+}
+
+.news-frontpage img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.news-frontpage { 
+    background-color: #b8a982ab;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.news-frontpage a {
+    background-color: rgb(28, 123, 213);
+    border-style: none;
+    color: #fff;
+    height: 5vh;
+}
+.news-frontpage a:hover {
+    cursor:pointer;
+    background-color: rgb(21, 95, 165);
+
+}
+
+@media screen and (max-width: 700px) {
+    .news-frontpage-container {
+        display: block;
+
+    }
+
+    
+
+}

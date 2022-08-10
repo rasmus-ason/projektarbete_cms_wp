@@ -1,0 +1,48 @@
+.rental-search-container {
+    width: 70%;
+    margin: auto;
+    background-color: #d1a22dab;
+    
+}
+
+.hb-form-table {
+   
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-auto-flow: dense;
+    
+    
+      
+    
+}
+
+
+
+
+.rental-search-container h3 {
+    color: #B8A982;
+    text-transform: uppercase;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    
+}
+
+.rental-search-container label {
+   display: none; 
+}
+
+.rental-search-container input[type=text]  {
+    width: 30%;
+}
+
+.rental-search-container select  {
+    min-height: 8vh;
+}
+
+.hb-search-form button {
+    width: 100%;
+    
+}
+
+
+
