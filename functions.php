@@ -75,6 +75,20 @@ function pals_widget_init() {
         'before-widget'     => '<div>',
         'after-widget'      => '</div>'
     ));
+    register_sidebar(array(
+        'name'              => 'front-page-puff',
+        'id'                => 'front-page-puff',
+        'before-widget'     => '<div>',
+        'after-widget'      => '</div>',
+        'before-title'      => '<h2>',
+        'after-title'       => '</h2>'
+    ));
+    register_sidebar(array(
+        'name'              => 'breadcrumbs',
+        'id'                => 'breadcrumbs',
+        'before-widget'     => '<div>',
+        'after-widget'      => '</div>'
+    ));
 }
 
 

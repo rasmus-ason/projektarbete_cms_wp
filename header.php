@@ -59,5 +59,18 @@
   <div class="menu-icon-container">
     <span onclick="openNav()"><i class="fa fa-bars"></i></span>
   </div>
+
+  <?php 
+            if(is_active_sidebar('breadcrumbs')) : ?>
+                <div id="breadcrumbs">
+                    <?php dynamic_sidebar('breadcrumbs'); ?>
+                </div>
+            <?php
+            endif; ?>
+</div>
+
+  
+
 </header>
+
 

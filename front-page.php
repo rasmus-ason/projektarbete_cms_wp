@@ -13,9 +13,10 @@
             ?> 
     </div>    	
 <img alt="" src="<?php header_image();?>">   
-<div>
+            </div>
 
 <div class="rental-search-container">
+    <div class="search-box">
 
     <?php  
     if(is_active_sidebar('rental-search')) : ?>
@@ -23,7 +24,22 @@
             <?php dynamic_sidebar('rental-search'); ?>
         </div><?php
     endif; ?>
+
+    </div>
 </div>
+
+<!-- Front Page Widget -->
+<article>
+    <div class="front-page-puff">
+        <?php 
+            if(is_active_sidebar('front-page-puff')) : ?>
+                <div id="front-page-puff">
+                    <?php dynamic_sidebar('front-page-puff'); ?>
+                </div>
+            <?php
+            endif; ?>
+    </div>
+</article>
 
 <section>
         

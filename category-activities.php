@@ -17,6 +17,16 @@
 
     <div class="list-container">
 
+    <!--Image-->
+    <div class="list-image">
+            <?php 
+                if(has_post_thumbnail()) {
+                    the_post_thumbnail('small'); 
+
+                }
+                ?>
+        </div>
+
         <!--Text about accomondation-->
         <div class="list-text">
      
@@ -26,15 +36,7 @@
             <!-- </ul> -->
             <a href="<?php the_permalink(); ?>" class="button-general">Read More</a>
         </div>
-        <!--Image-->
-        <div class="list-image">
-            <?php 
-                if(has_post_thumbnail()) {
-                    the_post_thumbnail('small'); 
-
-                }
-                ?>
-        </div>
+        
     </div>
 </article>
 

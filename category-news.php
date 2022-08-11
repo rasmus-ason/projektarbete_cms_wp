@@ -18,17 +18,8 @@
 
     <div class="list-container">
 
-        <!--Text about accomondation-->
-        <div class="list-text news-text-excerpt">
-     
-            <h3><?php the_title(); ?></h3>
-            <ul>
-                <?php the_excerpt(); ?>
-            </ul>
-            <a href="<?php the_permalink(); ?>" class="button-general">Read More</a>
-        </div>
-        <!--Image-->
-        <div class="list-image">
+    <!--Image-->
+    <div class="list-image">
             <?php 
                 if(has_post_thumbnail()) {
                     the_post_thumbnail('small'); 
@@ -36,6 +27,17 @@
                 }
                 ?>
         </div>
+
+        <!--Text about accomondation-->
+        <div class="list-text news-text-excerpt">
+     
+            <h3><?php the_title(); ?></h3>
+            
+                <?php the_excerpt(); ?>
+            
+            <a href="<?php the_permalink(); ?>" class="button-general">Read More</a>
+        </div>
+        
     </div>
 </article>
 

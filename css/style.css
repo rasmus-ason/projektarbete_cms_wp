@@ -16,9 +16,10 @@ h1 {
 }
 
 .beige-heading {
-    color: #B8A982;
+    color: #c0ad8b;
     text-transform: uppercase;
     font-size: clamp(1.2rem, 3vw, 2.5rem);
+    
     
 }
 
@@ -26,6 +27,19 @@ h1 {
 h2, p, table, ul {
     font-family: 'KoHo', sans-serif;
     font-weight: 600;
+}
+
+/* Bread crumbs settings */
+.breadcrumbs {
+    
+    font-family: 'koho', serif;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    list-style: none;
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    background-color: #61978d;
+    color: #fff;
 }
 
 
@@ -41,8 +55,22 @@ h2, p, table, ul {
     border: solid 10px #B8A982;
     }
 
+@media screen and (max-width: 900px) {
+    .inside-content {
+        display: block;
+    
+    }
+    .inside-content-image{
+        width: 70vw;
+        height: auto;
+        
+        margin: auto;
+    }
+}
+
 .inside-content-text p {
-    width: 60ch;
+    max-width: 50ch;
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
 }
 
 .inside-content-text h2 {
@@ -50,34 +78,22 @@ h2, p, table, ul {
 }
 
 .inside-content-image img {
-    width: 32vw;
+    width: 30vw;
     height: auto;
     margin-top: 8%;
     margin-right: 30px;
-    
-    
-
-    
-    
-        
-     
-    }
-
-
-
+}
 
 /*General button settings*/
 .button-general {
     text-align: center;
     width: 100%;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
 .button-general a {
     font-family: 'Jacques Francois', serif;    
-    color: #fff;
-    
+    color: #fff;   
 }
 
 .button-general a:hover {
@@ -93,7 +109,7 @@ h2, p, table, ul {
 /*Large buttons settings*/
 .large-buttons {
     margin: auto;
-    background-color: #2E7EBD;
+    background-color: #465C7B;
     width: min(800px, 70vw);
     border-style: none;
     margin-bottom: 4vh;
@@ -113,11 +129,36 @@ h2, p, table, ul {
     background-color: #246aa0;
 }
 
+/* Front page puff */
+.front-page-puff {
+    border: dotted 10px #6D526E;
+    width: max(280px, 50vw);
+    margin: auto;
+    padding: 2% 4% 4% 4%;
+    list-style: none;
+}
+
+.front-page-puff p, .front-page-puff h2 {
+    color: #5b425c;
+    text-align: center;
+    
+}
+
+.front-page-puff p {font-size: clamp(1rem, 2vw, 1.3rem);}
+.front-page-puff h2 {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-family: 'Jacques Francois', serif;
+    text-transform: uppercase;
+    font-weight: 200;
+
+}
+
+
 
 
 /* Reviews on front page */
 .review-container {
-    
+    list-style: none;
     width: 100%;
     text-align: center;
     padding-top: 2%;

@@ -7,13 +7,14 @@
     background-color: #f5f5f5;
     padding: 3%;
     border: solid 5px #B8A982;
-    margin-bottom: 3.5%;
+    margin-bottom: 3%;
     
 }
 
 .list-text {
     position: relative;
     width: 55%;
+    margin-left: 5%;
 }
 
 .list-text ul {
@@ -22,18 +23,17 @@
 }
 
 .list-text ul li {
-    list-style: none;
-    
+    list-style: none; 
     display: block; text-align: center;
     line-height: 130%;
-    font-size: clamp(0.7rem, 1.1vw, 1rem);
+    font-size: clamp(0.7rem, 1.1vw, 0.9rem);
     
 }
 
 .list-text h3 {
     margin-right: -8%;
     color: #B8A982;
-    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.35rem);
     text-transform: uppercase;
     text-align: center;
     font-family: 'Jacques Francois', serif;
@@ -44,7 +44,7 @@
 .list-text a {
     position: absolute; bottom: 0; right: 0;
     margin: auto;
-    background-color: rgb(25, 115, 185);
+    background-color: #465C7B;
     text-decoration: none;
     color: #fff;
     padding-top: 4px;
@@ -52,13 +52,13 @@
     width: 90%;
     border-style: none;
     margin-bottom: 10px;
-    font-size: clamp(0.7rem, 1.1vw, 1rem);
+    font-size: clamp(0.6rem, 1.1vw, 0.85rem);
     text-transform: uppercase;   
 }
 
 .list-text a:hover {
     cursor: pointer;
-    background-color: rgb(21, 104, 167);
+    background-color: #9b8c67;
 }
 
 .list-image {
@@ -77,7 +77,8 @@
 }
 
 .news-text-excerpt p {
-   width: 100%;
+   width: 90%;
+   font-size: clamp(0.75rem, 2vw, 0.9rem);
 }
 
 @media screen and (max-width: 800px) {

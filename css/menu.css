@@ -2,21 +2,21 @@ header {
     width: 100%;
     position: fixed; top: 0;
     z-index: 999;
-    background-color: #2E7EBD;
+    /* background-color: #2E7EBD; */
     
     
 }
 header h1 {
     position: absolute; left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 8px;
     color: rgb(255, 255, 255);
     font-size: clamp(1.1rem, 2.5vw, 3rem);
-    background-color: #2E7EBD;
+    background-color: #61978d;
 }
 header span i {
-  position: fixed; right: 30px; top: 50px;
+  position: fixed; right: 30px; top: 25px;
   color: #fff;  
   
      
@@ -34,7 +34,7 @@ span i:hover {cursor: pointer;}
     z-index: 1; /* Sit on top */
     right: 0;
     top: 0;
-    background-color: #2e7fbdde; /* Black fallback color */
+    background-color: #61978dce;; /* Black fallback color */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.8s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }

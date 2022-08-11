@@ -5,6 +5,8 @@
 <?php get_header() ?>
 
 
+
+
     page.php
     <div class="inside-content">
     <div class="inside-content-image">
