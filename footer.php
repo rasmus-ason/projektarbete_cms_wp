@@ -4,7 +4,7 @@
     <h2>Pals Villas & Guesthouse</h2>
    
     <div class="divide-line"></div>
-    <h3>Contact us</h3>
+    <h3>Contact us!</h3>
     <h4>Phonenumber</h4>
     <?php  
     if(is_active_sidebar('footer-content-phonenumber')) : ?>
