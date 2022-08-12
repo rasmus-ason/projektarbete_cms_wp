@@ -46,8 +46,7 @@
 
     <div class="image-link-container">
 
-    <?php 
-            
+    <?php  
             query_posts('category_name=Frontpagelinks&posts_per_page=6');
             if(have_posts()) {
                 while(have_posts()) {
@@ -55,20 +54,17 @@
             ?>
 
         <div class="image-link">
-
-        <?php 
-                    if(has_post_thumbnail()) {
-                        the_post_thumbnail(); 
-
+            <?php 
+                if(has_post_thumbnail()) {
+                    the_post_thumbnail(); 
                     }
-                    ?>
-            
+                ?>
             <h2><?php the_title();?></h2>
         </div>
         <?php
                 }
             }
-            ?> 
+        ?> 
     </div>
     
 </section>

@@ -7,6 +7,7 @@
         while(have_posts()) {
             the_post();
     ?>
+
     <h2 class="beige-heading"><?php the_title()?></h2>
     <div>
         <?php 
@@ -18,7 +19,16 @@
         </div>
 
     <div class="textblock-container textblock-about">
-        <h3 class="beige-heading">About</h3>
+        <?php 
+                if(in_category('accomondation') || (in_category('activities'))) : ?>
+                <h3 class="beige-heading">About</h3>
+
+                <?php else: ?>
+
+                <h3 class="beige-heading"><?php the_title()?></h3>
+                
+                <?php endif ?>
+
         <?php the_content(); ?>
     </div>
 
@@ -27,20 +37,23 @@
             }
             ?> 
 
-<div class="textblock-container">
+<?php if(in_category('accomondation') || (in_category('activities'))) : ?>
+
+
+    <div class="textblock-container">
         <h3 class="beige-heading">Price</h3>
         <div class="price-list-container hide-elements-pricelist">
             
-
-
             <div class="price-list">
             <?php the_content(); ?>
             </div>
-
-            
-
         </div>
-    </div>
+    </div>   
+
+
+<?php endif ?>
+
+
 
 </article>
 

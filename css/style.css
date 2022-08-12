@@ -131,7 +131,7 @@ h2, p, table, ul {
 
 /* Front page puff */
 .front-page-puff {
-    border: dotted 10px #6D526E;
+    border: dotted 10px #814b83;
     width: max(280px, 50vw);
     margin: auto;
     padding: 2% 4% 4% 4%;
@@ -139,7 +139,7 @@ h2, p, table, ul {
 }
 
 .front-page-puff p, .front-page-puff h2 {
-    color: #5b425c;
+    color: #814b83;;
     text-align: center;
     
 }
