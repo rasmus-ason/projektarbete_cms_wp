@@ -6,8 +6,8 @@ add_action('init', 'register_my_menus');
 function register_my_menus() {
     register_nav_menus(array (
         'main-menu' => 'Top menu'
-
     ));
+    
 }
 
 //Activate featured image
@@ -90,5 +90,7 @@ function pals_widget_init() {
         'after-widget'      => '</div>'
     ));
 }
+
+
 
 

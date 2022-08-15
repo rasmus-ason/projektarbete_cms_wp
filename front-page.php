@@ -15,35 +15,23 @@
 <img alt="" src="<?php header_image();?>">   
             </div>
 
-<div class="rental-search-container">
-    <div class="search-box">
 
-    <?php  
-    if(is_active_sidebar('rental-search')) : ?>
-        <div id="rental-search">
-            <?php dynamic_sidebar('rental-search'); ?>
-        </div><?php
-    endif; ?>
-
-    </div>
-</div>
 
 <!-- Front Page Widget -->
-<article>
-    <div class="front-page-puff">
-        <?php 
-            if(is_active_sidebar('front-page-puff')) : ?>
-                <div id="front-page-puff">
-                    <?php dynamic_sidebar('front-page-puff'); ?>
-                </div>
-            <?php
-            endif; ?>
-    </div>
-</article>
-
+<?php 
+    if(is_active_sidebar('front-page-puff')) : ?>
+    <article class="front-page-puff-container">
+        <div class="front-page-puff">
+            <div id="front-page-puff">
+                <?php dynamic_sidebar('front-page-puff'); ?>
+            </div>
+        </div>
+    </article>
+<?php
+endif; ?>
+    
+<!--Front Page Links -->
 <section>
-        
-
     <div class="image-link-container">
 
     <?php  
@@ -59,28 +47,18 @@
                     the_post_thumbnail(); 
                     }
                 ?>
-            <h2><?php the_title();?></h2>
+
+                <a href="<?php the_permalink();?>">
+            <h2><?php the_title();?></h2></a>
         </div>
         <?php
                 }
             }
         ?> 
-    </div>
-    
+    </div> 
 </section>
 
-
-
-
-<section class="button-general front-page-buttons">
-    <div class="large-buttons">
-        <a>Make a reservation!</a>
-    </div>
-    <div class="large-buttons">
-        <a>Book Activities</a>
-    </div>
-</section>
-
+<!-- 3 latest news section -->
 <section>
     <h2 class="beige-heading">Latest news from Pals Villas</h2>
         <div class="news-frontpage-container">
@@ -92,7 +70,7 @@
                     the_post();
             ?>
 
-            <article>
+            <div>
                 <div class="news-frontpage">
                     <?php 
                     if(has_post_thumbnail()) {
@@ -102,9 +80,11 @@
                     ?>
                     
                     <?php the_excerpt(); ?>
-                    <a href="<?php the_permalink(); ?>" class="button-general">Read article</a>
+                    <div class="news-frontpage-buttons">
+                        <a href="<?php the_permalink(); ?>" class="news-button">Read article</a>
+                    </div>
                 </div>
-            </article>
+                </div>
 
             <?php
                 }
@@ -114,6 +94,7 @@
         </div>
 </section>
 
+<!--Review container-->
 <section>
     <div class="review-container review-display-box">
         <h2>Reviews from our visitors!</h2>
@@ -127,5 +108,5 @@
 </section>
 
 
-
+<!--Include footer-->
 <?php get_footer() ?>    

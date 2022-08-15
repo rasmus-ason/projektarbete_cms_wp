@@ -6,7 +6,7 @@
     color: #000;
     border-style: none;
     width: 100%;
-    border: solid 3px #B8A982;
+    border: solid 0.2vw #B8A982;
     box-shadow: 2px 2px 2px #b1b1b1;
     font-family: 'koho', serif;
 
@@ -24,21 +24,32 @@
     box-shadow: 2px 2px 2px #40665f;
     font-family: 'Jacques Francois', serif; 
     text-transform: uppercase;
+    transition: all 0.8s;
+
 }
 
 .contact-form input[type="submit"]:hover {
     background-color: #40665f;
     cursor: pointer;
+    transition: all 0.8s;
     
 }
 
 .contact-form{
     width: max(300px, 50vw);
     margin: auto;
-    background-color: #f5f5f5;
-    padding: 3% 6% 3% 6%;
+    background-color: #ffffff;
+    padding: 4%;
     margin-bottom: 10%;
-    border: solid 10px #B8A982;
+    border: solid 1.3vw #B8A982;
     margin-top: 10%;
+    list-style: none;
+}
 
+.contact-form label {
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+}
+
+#cf-activities {
+    list-style: none;
 }

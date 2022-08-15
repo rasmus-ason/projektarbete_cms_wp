@@ -1,5 +1,7 @@
-<!--Footer-innehåll-->
+<!--Close tag main-->
+</main>
 
+<!--Footer-innehåll-->
 <footer>
     <h2>Pals Villas & Guesthouse</h2>
    
@@ -36,6 +38,12 @@
         </div><?php
     endif; ?>
     </article>
+
+    <nav>
+        <div class="divide-line"></div>
+            <?php wp_nav_menu()?>
+        <div class="divide-line"></div>
+    </nav>
     
 </footer>
 

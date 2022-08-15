@@ -12,7 +12,10 @@ footer {
 #site-review {
     width: max(300px, 50vw);
     margin: auto;
+    
 }
+
+
 
 
 
@@ -42,7 +45,9 @@ footer p{
     font-weight: 200;
     font-size: clamp(0.8rem, 3vw, 1.2rem);
     margin-top: -1%;
+    
 }
+
 
 .divide-line {
     width: 55vw;
@@ -53,6 +58,13 @@ footer p{
     margin-bottom: 3%;
 }
 
-footer li {
-    list-style: none;
+footer nav li{
+    line-height: 180%;
+    margin-left: -4vw;
+    text-decoration: none;
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
+
+
+
+

@@ -1,13 +1,19 @@
 .news-frontpage-container {
+    position: relative;
     width: max(80vw, 300px);
     display: grid;
     grid-template-columns: repeat(3, 33%);
     margin: auto;
+    height: min-content;
+    margin-bottom: 7%;
 }
 
 .news-frontpage img {
     width: 100%;
-    height: auto;
+    height:230px;
+    object-fit: cover;
+
+    
 }
 
 
@@ -16,22 +22,41 @@
     background-color: #c0ad8b;
     padding: 20px;
     margin: 10px;
-
+    transition: all 0.8s;
 }
 
-.news-frontpage a {
-    background-color: rgb(28, 123, 213);
+.news-frontpage:hover { 
+    background-color: #b29d7a;
+    transition: all 0.8s;
+}
+
+.news-frontpage p {
+    font-size: clamp(0.65rem, 1.5vw, 0.9rem);
+}
+
+.news-frontpage-buttons a { 
+    font-family: 'Jacques Francois', serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: clamp(0.6rem, 1.3vw, 0.85rem);
+    background-color: #465C7B;
     border-style: none;
     color: #fff;
-    height: 5vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    text-decoration: none;
 }
-.news-frontpage a:hover {
+.news-frontpage-buttons a:hover {
     cursor:pointer;
-    background-color: rgb(21, 95, 165);
+    background-color: #246aa0;
+    transition: 0.8s;
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .news-frontpage-container {
         display: block;
 

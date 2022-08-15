@@ -15,7 +15,7 @@
 <article>
 
 
-
+<a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
     <div class="list-container">
 
     <!--Image-->
@@ -35,10 +35,11 @@
             
                 <?php the_excerpt(); ?>
             
-            <a href="<?php the_permalink(); ?>" class="button-general">Read More</a>
+            <!-- <a href="<?php the_permalink(); ?>" class="button-general">Read More</a> -->
         </div>
         
     </div>
+</a>
 </article>
 
 <?php

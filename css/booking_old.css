@@ -1,0 +1,102 @@
+.rental-search-container {
+    position: relative;
+    width: max(290px, 65vw);
+    margin: auto;
+    min-height: auto;
+    
+    
+    
+}
+
+.search-box {
+    position: relative; top: -100px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #c0ad8b;
+    height: fit-content;
+    box-shadow: 2px 2px 2px #7b7053;
+    list-style: none;  
+
+    
+}
+
+.hb-form-table { 
+    margin: auto;
+    display: block;
+    /* display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, auto);
+    grid-auto-flow: dense;   */
+    
+
+}
+
+@media screen and (max-width: 650px) {
+    .hb-form-table { 
+        margin: auto;
+        display: block;    
+    }
+
+}
+
+@media screen and (max-width: 1220px) and (min-width: 651px) {
+    .hb-form-table { 
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, auto);
+        grid-auto-flow: dense;    
+    }
+
+}
+
+.hb-form-field {
+    margin-right: 8%;
+    
+    
+}
+
+
+
+
+.search-box h2 {
+    font-family: 'koho', serif;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin-top: 2%;   
+}
+
+.rental-search-container label {
+   display: none; 
+}
+
+.search-box input[type=text] {
+    width: max(260px, 60vw);
+}
+    
+.search-box select  {
+    display: none;
+}
+
+.rental-search-container button[type=submit] {
+    border-style: none;
+    background-color: #215882;
+    font-family: 'Jacques Francois', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 102%;
+    box-shadow: 2px 2px 2px #222222;;
+    
+}
+
+.rental-search-container button[type=submit]:hover {
+    cursor: pointer;
+    background-color: #000000;
+
+    transition: 0.8s;
+    font-weight: 400;
+}
+
+
+

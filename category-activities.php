@@ -14,7 +14,7 @@
 <article>
 
 
-
+<a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
     <div class="list-container">
 
     <!--Image-->
@@ -28,16 +28,17 @@
         </div>
 
         <!--Text about accomondation-->
-        <div class="list-text">
+        <div class="list-text news-text-excerpt">
      
             <h3><?php the_title(); ?></h3>
             <!-- <ul> -->
                 <?php the_excerpt(); ?>
             <!-- </ul> -->
-            <a href="<?php the_permalink(); ?>" class="button-general">Read More</a>
+            <!-- <a href="<?php the_permalink(); ?>" class="button-general">Read More</a> -->
         </div>
         
     </div>
+    </a>
 </article>
 
 <?php

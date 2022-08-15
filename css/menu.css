@@ -9,19 +9,29 @@ header {
 header h1 {
     position: absolute; left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 8px;
     color: rgb(255, 255, 255);
-    font-size: clamp(1.1rem, 2.5vw, 3rem);
+    font-size: clamp(0.9rem, 2vw, 3rem);
     background-color: #61978d;
+    text-shadow: 2px 2px 5px #000000;
 }
 header span i {
-  position: fixed; right: 30px; top: 25px;
-  color: #fff;  
-  
-     
+  position: fixed; right: 3vw; top: 1.5vh;
+  color: #fff;      
 }
 
+@media screen and (min-width: 1300px) {
+  header span i {
+    position: fixed; right: 3vw; top: 2.7vh; }
+  
+}
+
+@media screen and (max-width: 1300px) and (min-width: 900px) {
+  header span i {
+    position: fixed; right: 3vw; top: 2vh; }
+  
+}
 
 
 span i:hover {cursor: pointer;}
@@ -51,21 +61,24 @@ span i:hover {cursor: pointer;}
   nav li {
     list-style: none;
     text-transform: uppercase;
+
   }
   
   /* The navigation links inside the overlay */
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    font-size: clamp(0.9rem, 2vw, 1.6rem);
     color: #ffffff;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
+    margin-left: -5%;
+    transition: all 2s;
   }
 
   .overlay a:hover {
     text-decoration: underline;
-    transition: 1s;
+    transition: all 2s;
   }
 
   
@@ -88,7 +101,7 @@ span i:hover {cursor: pointer;}
   }
 
   .menu-line {
-    width: 35vw;
+    width: max(250px,40vw);
     margin: auto;
     background-color: rgba(255, 255, 255, 0.758);
     height: 2px;
