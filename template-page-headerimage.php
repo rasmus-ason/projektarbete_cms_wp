@@ -1,19 +1,21 @@
-<!-- Mall för kontaktsida -->
 <?php
 /*
-Template Name: Staff-page
+Template Name: Page-with-headerimage
 */
 ?>
 
 <?php get_header() ?>
 
-template-staff
+<!--Header image-->
+<div class="headerimage">
+   	
+<img alt="" src="<?php header_image();?>">   
 
-<h2 class="beige-heading">Our staff</h2>
+            </div>
 
-<div class="inside-content inside-content-staffpage">
-    <div class="inside-content-image inside-content-staffpage-image">
-    
+<!--Content -->
+<div class="inside-content">
+    <div class="inside-content-image">
 
     <?php 
             if(has_post_thumbnail()) {
@@ -21,11 +23,11 @@ template-staff
             }
             ?>
 </div>
-        <div class="inside-content-text inside-content-staffpage-text">
+        <div class="inside-content-text">
         <?php 
         if(have_posts()) : 
             while(have_posts()) : ?>
-            <h3 class="beige-heading"><?php the_title()?></h3>
+            <h2 class="beige-heading"><?php the_title()?></h2>
             <?php
                 the_post();
                 the_content();
@@ -37,9 +39,6 @@ template-staff
         
 
     </div>
-
-
-
 
 
 <?php get_footer() ?>    

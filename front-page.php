@@ -1,5 +1,6 @@
 <?php get_header() ?>
 
+<!--Header image-->
 <div class="headerimage">
     <div class="headerimage-text">
     <?php 
@@ -58,13 +59,13 @@ endif; ?>
     </div> 
 </section>
 
-<!-- 3 latest news section -->
+<!-- 4 latest news section -->
 <section>
     <h2 class="beige-heading">Latest news from Pals Villas</h2>
         <div class="news-frontpage-container">
 
         <?php 
-            query_posts('category_name=News&posts_per_page=3');
+            query_posts('category_name=News&posts_per_page=4');
             if(have_posts()) {
                 while(have_posts()) {
                     the_post();

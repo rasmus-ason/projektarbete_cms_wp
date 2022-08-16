@@ -1,8 +1,22 @@
-<!--Standarssida, om företaget, om ledningen, om pals, andra informations-->
-
-<!-- OBS kom ihåg en errorsida som kan komma upp om sidan ej hittas, white death -->
-
+<!-- Index page -->
 <?php get_header() ?>
+
+<?php 
+            if(has_post_thumbnail()) {
+                the_post_thumbnail(); 
+            }
+            ?>
+
+        <?php 
+        if(have_posts()) : 
+            while(have_posts()) : ?>
+            <h2 class="beige-heading"><?php the_title()?></h2>
+            <?php
+                the_post();
+                the_content();
+            endwhile;
+        endif;
+        ?>
 
 
 

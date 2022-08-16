@@ -28,9 +28,10 @@ $args = array(
 );
 add_theme_support('custom-header', $args);
 
-//Aktivera widget-area
+//Activate widget-area
 add_action('widgets_init', 'pals_widget_init');
 
+//Initiationg widgets
 function pals_widget_init() {
     register_sidebar(array(
         'name'              => 'footer-content-phonenumber',
@@ -78,6 +79,14 @@ function pals_widget_init() {
     register_sidebar(array(
         'name'              => 'front-page-puff',
         'id'                => 'front-page-puff',
+        'before-widget'     => '<div>',
+        'after-widget'      => '</div>',
+        'before-title'      => '<h2>',
+        'after-title'       => '</h2>'
+    ));
+    register_sidebar(array(
+        'name'              => 'sub-page-puff',
+        'id'                => 'sub-page-puff',
         'before-widget'     => '<div>',
         'after-widget'      => '</div>',
         'before-title'      => '<h2>',

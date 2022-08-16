@@ -1,10 +1,9 @@
-<!-- Lista över nyheter i, visas som excerpt på förstasidan, här kan alla nyheter listas i helformat, försöka få till 5 stycken per sidan -->
-
-
+<!-- Category page news-->
 <?php get_header() ?>
 
-<h2 class="beige-heading">Keep yourself updated</h2>
+<h2 class="beige-heading top-heading">Keep yourself updated</h2>
 
+<!-- Loop content-->
 <?php 
     if(have_posts()) {
         while(have_posts()) {
@@ -14,7 +13,7 @@
 
 <article>
 
-
+<!-- Link to single page-->
 <a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
     <div class="list-container">
 
@@ -35,7 +34,6 @@
             
                 <?php the_excerpt(); ?>
             
-            <!-- <a href="<?php the_permalink(); ?>" class="button-general">Read More</a> -->
         </div>
         
     </div>

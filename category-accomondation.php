@@ -1,18 +1,17 @@
-<!-- Lista över alla boenden, bild och lista ska visas-->
-
+<!-- Category page for accomondation-->
 <?php get_header() ?>
 
-<h2 class="beige-heading" >See our Accomondations</h2>
+<h2 class="beige-heading top-heading" >See our Accomondations</h2>
 
+<!-- The loop-->
 <?php 
     if(have_posts()) {
         while(have_posts()) {
             the_post();
     
                ?>
-
+<!-- Inside content start tag-->
 <article>
-
 
     <a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
     <div class="list-container">
@@ -42,6 +41,7 @@
     </a>
 </article>
 
+<!--Closing php-->
 <?php
 }
             } ?>

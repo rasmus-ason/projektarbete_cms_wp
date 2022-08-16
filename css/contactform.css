@@ -1,3 +1,4 @@
+/* CSS for contact page */ /* CSS for staff page */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea
@@ -13,6 +14,7 @@
     
 }
 
+/* Submit button */
 .contact-form input[type="submit"] {
     background-color: #61978d;
     border-style: none;
@@ -35,6 +37,7 @@
     
 }
 
+/* CSS for contact form */
 .contact-form{
     width: max(300px, 50vw);
     margin: auto;
@@ -52,4 +55,96 @@
 
 #cf-activities {
     list-style: none;
+}
+
+
+/* Staff Page */
+.staff-page-container { 
+    margin: 0 auto;
+    width: max(440px, 60vw);
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    grid-template-rows: repeat(10, auto);
+    grid-auto-flow: dense;
+    gap: 20px;
+    background-color: #f4f4f4;
+    padding: 3%;
+    height: fit-content;
+    margin-bottom: 10%;
+    transition: all 2s;
+}
+
+/* Change column settings depending on screen size */
+@media screen and (max-width: 1050px) {
+    .staff-page-container { 
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-template-rows: repeat(10, auto);
+        grid-auto-flow: dense;
+    
+}
+}
+
+@media screen and (max-width: 480px) {
+    .staff-page-container { 
+        display: grid;
+        grid-template-columns: repeat(1, 97%);
+        grid-template-rows: repeat(10, auto);
+        grid-auto-flow: dense;
+        width: 260px;
+    
+}
+
+}
+
+.staff-page-container:hover {
+    background-color: #d8d8d8;
+    transition: all 2s;
+}
+
+
+.staff-page {
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    background-color: #34695f;
+    padding: 5px;
+    
+    color: #fff;
+    transition: all 1.5s;
+
+
+}
+
+.staff-page:hover {
+    background-color: #1d3e38;
+    transition: all 1.5s;
+}
+
+.staff-page h3 {
+    font-size: clamp(0.6rem, 1.4vw, 0.8rem);
+    text-align: left;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.staff-page p {
+    font-size: clamp(0.6rem, 1.4vw, 0.8rem);
+    text-align: left;
+    font-weight: 200;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+
+}
+
+.staff-page img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    
+
+
 }

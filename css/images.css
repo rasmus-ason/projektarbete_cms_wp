@@ -27,15 +27,14 @@
     transition: all 2s;
 }
 
+/*Remove headertext on smaller screens */
 @media screen and (max-width: 460px) {
     .headerimage-text p{
         display: none;
-    }
-
-    
+    }    
 }
 
-/*Image link, 4 images on front page*/
+/*Image link, 4-6 images on front page*/
 .image-link-container {
    
     margin-left: 0.5%;
@@ -45,35 +44,32 @@
     grid-auto-flow: dense;
 }
 
+/* Change column settings depending on screen size */
  @media screen and (max-width: 550px) {
     .image-link-container {
-        
         display: grid;
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(5, auto);
         grid-auto-flow: dense;
-    }
-    
-
- }
-
- @media screen and (max-width: 960px) and (min-width: 551px) {
-    .image-link-container {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, auto);
-        grid-auto-flow: dense;
+        }
     }
 
-    .image-link img {
-        width: 100%;
-        max-height: 190px;
-        object-fit: cover;
-    }
-    
+        @media screen and (max-width: 960px) and (min-width: 551px) {
+            .image-link-container {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(2, auto);
+                grid-auto-flow: dense;
+                }
 
- }
+            .image-link img {
+                width: 100%;
+                max-height: 190px;
+                object-fit: cover;
+                }
+        }
 
+/* Link on images*/
 .image-link {
     position: relative;
     display: flex;
@@ -96,9 +92,10 @@
     transition: all 0.8s;
 }
 
+/* Heading on image links */
 .image-link h2 {
     position: absolute;
-    top: 40%; left: 50%;
+    top: 35%; left: 50%;
     transform: translate(-50%, -50%);
     color: #b8a982;
     font-family: 'Jacques Francois', serif;
@@ -116,7 +113,7 @@
 }
 
 .image-link h2:hover {
-    background-color: #2E7EBD;
+    background-color: #465C7B;
     color: #fff;
     transition: all 2s;
     cursor: pointer;

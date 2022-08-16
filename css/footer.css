@@ -9,20 +9,14 @@ footer {
     padding-right: 30%; */
 }
 
+/* Site review area*/
 #site-review {
     width: max(300px, 50vw);
     margin: auto;
     
 }
 
-
-
-
-
-/* [class*=glsr-] {
-    font-family:'Times New Roman', Times, serif;
-} */
-
+/* Text settings */
 footer h2 {
     font-size: clamp(1.1rem, 2.5vw, 1.9rem);
     
@@ -48,7 +42,22 @@ footer p{
     
 }
 
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    transition: all 1s;
+}
 
+footer a:hover {
+    background-color: rgba(0, 0, 0, 0.636);
+    color: #fff;
+    transition: all 1s;
+    
+}
+
+/* Dividing line in footer */
 .divide-line {
     width: 55vw;
     height: 2px;
@@ -58,8 +67,9 @@ footer p{
     margin-bottom: 3%;
 }
 
+/* Navingation links */
 footer nav li{
-    line-height: 180%;
+    line-height: 250%;
     margin-left: -4vw;
     text-decoration: none;
     font-size: clamp(0.7rem, 1.5vw, 1rem);

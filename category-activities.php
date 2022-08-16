@@ -1,9 +1,9 @@
-<!-- Lista över alla aktiviteter, design enligt förstasidans bildupplägg eller likande som visar boenden-->
-
+<!-- Category page for activities-->
 <?php get_header() ?>
 
-<h2 class="beige-heading" >Activities</h2>
+<h2 class="beige-heading top-heading" >Activities</h2>
 
+<!--Loop content-->
 <?php 
     if(have_posts()) {
         while(have_posts()) {
@@ -13,7 +13,7 @@
 
 <article>
 
-
+<!-- Link to single page-->
 <a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
     <div class="list-container">
 
@@ -31,10 +31,9 @@
         <div class="list-text news-text-excerpt">
      
             <h3><?php the_title(); ?></h3>
-            <!-- <ul> -->
+            
                 <?php the_excerpt(); ?>
-            <!-- </ul> -->
-            <!-- <a href="<?php the_permalink(); ?>" class="button-general">Read More</a> -->
+        
         </div>
         
     </div>

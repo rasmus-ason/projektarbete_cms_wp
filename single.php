@@ -1,5 +1,13 @@
 <?php get_header() ?>
 
+<!-- If category is staff, send user to single-staff.php -->
+<?php
+$post = $wp_query->post;
+if ( in_category('staff') ) {
+include(TEMPLATEPATH . '/single-staff.php');
+}
+?>
+
 <!-- Displays single page content-->
 <article class="single-page-content">
     <?php
@@ -8,7 +16,7 @@
             the_post();
     ?>
 
-    <h2 class="beige-heading"><?php the_title()?></h2>
+    <h2 class="beige-heading top-heading"><?php the_title()?></h2>
     <div>
         <?php 
             if(has_post_thumbnail()) {

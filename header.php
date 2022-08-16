@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/footer.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/singlepage.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/contactform.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/booking.css">
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
@@ -34,6 +33,7 @@
 
 <header id="stickyheader">
 
+    <!-- Link to home page and h1-heading-->
     <a href="<?php echo get_home_url(); ?>"><h1>Pals Villas & Guesthouse</h1></a>
 
     <!-- The overlay -->
@@ -55,23 +55,25 @@
   
   </div>
   
-  <!-- Use any element to open/show the overlay navigation menu -->
+  <!-- Open/close navigation -->
   <div class="menu-icon-container">
     <span onclick="openNav()"><i class="fa fa-bars"></i></span>
   </div>
 
-  <?php 
+        <!-- Breadcrumbs widget area-->
+         <?php 
             if(is_active_sidebar('breadcrumbs')) : ?>
+            <div class="breadcrumbs">
                 <div id="breadcrumbs">
                     <?php dynamic_sidebar('breadcrumbs'); ?>
                 </div>
+            </div>
             <?php
-            endif; ?>
-</div>
-
-  
+            endif; ?> 
 
 </header>
+
+        
 
 <main>
 

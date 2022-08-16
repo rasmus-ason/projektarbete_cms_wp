@@ -5,13 +5,13 @@ Template Name: Contact-form-page
 */
 ?>
 
-
 <?php get_header() ?>
 
+<!-- Contact form class-->
 <div class="contact-form">
-    
-<?php 
-        
+  
+<!-- Display content from page-->
+<?php  
         if(have_posts()) : 
             while(have_posts()) : ?>
             <h2 class="beige-heading"><?php the_title()?></h2>
@@ -21,13 +21,6 @@ Template Name: Contact-form-page
             endwhile;
         endif;
         ?>
-       
-
-        
-
     </div>
-
-    
-
 
 <?php get_footer() ?>    

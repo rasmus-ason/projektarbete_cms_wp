@@ -1,13 +1,14 @@
 <!--Close tag main-->
 </main>
 
-<!--Footer-innehåll-->
+<!--Footer content-->
 <footer>
     <h2>Pals Villas & Guesthouse</h2>
    
     <div class="divide-line"></div>
     <h3>Contact us!</h3>
     <h4>Phonenumber</h4>
+    <!-- Widget for dynamic phonenumber-->
     <?php  
     if(is_active_sidebar('footer-content-phonenumber')) : ?>
         <div id="footer-content-phonenumber">
@@ -16,19 +17,25 @@
     endif; ?>
 
     <h4>Email</h4>
-
+    <!-- Widget for dynamic email-->
     <?php  
     if(is_active_sidebar('footer-content-email')) : ?>
         <div id="footer-content-email">
             <?php dynamic_sidebar('footer-content-email'); ?>
         </div><?php
     endif; ?>
+
+    <br><p>OR</p><br>
+
+<!-- Link to contact page-->
+<a href="http://localhost/pals/wordpress/contact/">Go to contact Page</a>
+
     
     
     <div class="divide-line"></div>
 
     
-
+    <!-- Site review container and widget area-->
     <article class="review-container">
     <h2>Please leave a review!</h2>
     <?php  
@@ -39,7 +46,8 @@
     endif; ?>
     </article>
 
-    <nav>
+    <!-- Footer menu-->
+    <nav> 
         <div class="divide-line"></div>
             <?php wp_nav_menu()?>
         <div class="divide-line"></div>
@@ -47,15 +55,8 @@
     
 </footer>
 
-
-
-
-    
+   
 <script src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
-
-
-
-
 
 <?php wp_footer(); ?>
 

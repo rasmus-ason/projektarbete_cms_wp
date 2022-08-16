@@ -1,10 +1,11 @@
+/*General settings */
 body {
     margin: 0;
     list-style: none;
 }
 
-main h2 {
-    margin-top: 8%;
+.top-heading {
+    margin-top: 17vh;
     
 }
 
@@ -27,7 +28,7 @@ h1 {
 .beige-heading {
     color: #c0ad8b;
     text-transform: uppercase;
-    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-size: clamp(1.2rem, 4.5vw, 2.5rem);
     
     
 }
@@ -40,15 +41,15 @@ h2, p, table, ul {
 
 /* Bread crumbs settings */
 .breadcrumbs {
-    margin-top: 100px;
-    font-family: 'koho', serif;
-    padding-left: 30px;
-    padding-top: 5px;
-    padding-bottom: 7px;
-    list-style: none;
-    font-size: clamp(0.8rem, 2vw, 1.3rem);
-    background-color: #61978d;
-    color: #fff;
+margin-top: 3.2%;
+font-family: 'koho', serif;
+padding-left: 30px;
+padding-top: 7px;
+padding-bottom: 7px;
+list-style: none;
+font-size: clamp(0.65rem, 2vw, 1rem);
+background-color: #70a99e;
+color: #fff;
 }
 
 
@@ -61,43 +62,23 @@ h2, p, table, ul {
     padding: 2% 10% 3% 5%;
     margin: 5%;
     margin-bottom: 10%;
+    margin-top: 15%;
     border: solid 1vw #B8A982;
     }
 
 @media screen and (max-width: 700px) {
     .inside-content {
         display: block;
-    
     }
-
-    .inside-content-staffpage {
-        display: flex;
-        padding: -5%;
-    }
-
-    @media screen and (max-width: 400px) {
-        .inside-content-staffpage {
-            display: block;
-            padding: -5%;
-        }
-    }
-
     .inside-content-image img{
         min-width: 230px;
         height: auto;
         margin: auto;
         margin-bottom: -6%;
-    }
-
-    .inside-content-staffpage-image img{
-        min-width: 130px;
-        height: auto;
-        margin: auto;
-        margin-bottom: -3%;
-        
-    }
+    }   
 }
 
+/* Inside content, text settings */
 .inside-content-text p {
     max-width: 50ch;
     font-size: clamp(0.8rem, 2vw, 0.95rem);
@@ -122,67 +103,6 @@ h2, p, table, ul {
     margin-right: 30px;
 }
 
-.inside-content-staffpage-image img {
-    width: 15vw;
-    height: auto;
-    margin-top: 8%;
-    margin-right: 30px;
-}
-
-/* Inside content pages - display block, content center */
-/* .inside-content-center-container {
-    position: relative;
-    width: max(280px, 60vw); 
-    margin: auto;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    border: solid 10px #B8A982;
-    background-color: #eeeeee;
-
-}
-.inside-content-center {
-    display: block;
-    text-align: center; 
-    list-style: none;
-    }
-
-#hotel-booking-results {
-    display: block;
-    margin: auto;
-    margin-bottom: 5%;
-    width: 70%;
-    background-color: #dfdfdf;
-    }
-
-
-
-.inside-content-center img {
-    width: 70%;
-    margin-left: 20%;
-    height: auto;
-    }
-
-.inside-content-center input[type=text] {
-    width: max(250px, 50vw); 
-}
-
-.inside-content-center button[type=submit]  {
-    width: max(250px, 50vw); 
-    text-transform: uppercase;
-    background-color: #465C7B;
-    font-family: 'Jacques Francois', serif;
-    font-weight: 200;
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-}
-
-.inside-content-center button[type=submit]:hover  { 
-    background-color: #324765;
-    cursor: pointer;
-} */
-
-/* .inside-content-center h3 {
-    display: none;
-    } */
 
 /*General button settings*/
 .button-general {
@@ -200,35 +120,35 @@ h2, p, table, ul {
     cursor: pointer;
 }
 
-/* Front page buttons
-.front-page-buttons {
-    margin-top: 4%;
-    margin-bottom: 5%;
-}
 
 /*Large buttons settings*/
-/* .large-buttons {
+ .large-buttons {
     margin: auto;
     background-color: #465C7B;
-    width: min(800px, 70vw);
+    width: max(170px, 40vw);
     border-style: none;
     margin-bottom: 4vh;
+    margin-top: -5vh;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: clamp(1.1rem, 4vw, 1.7rem);
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
     text-transform: uppercase;
     box-shadow: 2px 2px 2px #797979;
+    text-align: center;
 }
 
 .large-buttons a {
     border-style: none;
+    text-decoration: none;
+    color: #fff;
+    transition: all 2s;
 }
 
 .large-buttons:hover {
     cursor: pointer;
     background-color: #246aa0;
-    transition: 0.8s;
-} */ 
+    transition: all 2s;
+} 
 
 /* Front page puff */
 .front-page-puff-container {
@@ -262,9 +182,6 @@ h2, p, table, ul {
     margin-top: 1vh;
 
 }
-
-
-
 
 /* Reviews on front page */
 .review-container {
