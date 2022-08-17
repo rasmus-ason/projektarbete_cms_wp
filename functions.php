@@ -87,6 +87,16 @@ function pals_widget_init() {
         'after-title'       => '</h2>'
     ));
     register_sidebar(array(
+        'name'              => 'welcome-text',
+        'id'                => 'welcome-text',
+        'before-widget'     => '<div>',
+        'after-widget'      => '</div>',
+        'before-title'      => '<h2>',
+        'after-title'       => '</h2>',
+        'before-content'      => '<p>',
+        'after-content'       => '</p>'
+    ));
+    register_sidebar(array(
         'name'              => 'sub-page-puff',
         'id'                => 'sub-page-puff',
         'before-widget'     => '<div>',

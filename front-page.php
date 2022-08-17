@@ -32,6 +32,20 @@
     </article>
 <?php
 endif; ?>
+
+<!-- Welcoming text-->
+<?php     
+    if(is_active_sidebar('welcome-text')) : ?>
+        <section>
+            <div class="review-container review-display-box welcometext">
+                <div id="welcome-text">
+                    <?php dynamic_sidebar('welcome-text'); ?>
+                </div>
+          </div>
+        </section>
+    <?php
+endif; ?>
+  
     
 <!--Front Page Links -->
 <section>

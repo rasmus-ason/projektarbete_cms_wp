@@ -36,26 +36,9 @@
    
 }
 
-/* UL-list settings
-.list-text ul {
-    margin-top: -10px;
-    margin-bottom: 5vh;
-    height: fit-content;
-    width: 100%;
-    margin-left: -13%;    
-}
-
-.list-text ul li {
-    list-style: none; 
-    display: block; 
-    text-align: center;
-    line-height: 130%;
-    font-size: clamp(0.7rem, 0.9vw, 1rem);   
-} */
-
 .list-container h3 {
    
-    color: #B8A982;
+    color: #a38249;
     font-size: clamp(0.8rem, 1.8vw, 1.35rem);
     text-transform: uppercase;
     text-align: center;
