@@ -4,11 +4,17 @@
     position: relative;
     width: max(270px, 55vw);
     margin: auto;
+    
     background-color: #f7f7f7;
     padding: 3%;
     border: solid 5px #B8A982;
     transition: all 0.7s;   
     height: min-content;
+}
+
+.margin-bottom {
+    margin-bottom: 3%;
+
 }
 
 /* Hover function */
@@ -19,17 +25,18 @@
 
 }
 
-.list-link ul li, .list-link p{
+/* .list-link ul li, */
+.list-link p{ 
     color: #000;
 }
 
 .list-text {
     position: relative;
-    width: 50%;
-    margin-left: 8%; 
+    width: 100%;
+   
 }
 
-/* UL-list settings */
+/* UL-list settings
 .list-text ul {
     margin-top: -10px;
     margin-bottom: 5vh;
@@ -44,15 +51,16 @@
     text-align: center;
     line-height: 130%;
     font-size: clamp(0.7rem, 0.9vw, 1rem);   
-}
+} */
 
-.list-text h3 {
+.list-container h3 {
+   
     color: #B8A982;
     font-size: clamp(0.8rem, 1.8vw, 1.35rem);
     text-transform: uppercase;
     text-align: center;
     font-family: 'Jacques Francois', serif;
-    margin-left: -15%;
+    
 }
 
 .list-image {
@@ -65,15 +73,19 @@
 }
 
 /*Hide describing text from list*/
-.hide-p-text p, .hide-p-text table {
+.hide-p-text table {
     display: none;
-
 }
 
-.news-text-excerpt p {
-   width: 85%;
+.list-text p {
+   max-width: 40ch;
+   margin: auto;
    text-align: center;
-   font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+   font-size: clamp(0.7rem, 1vw, 0.9rem);
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 20px;
+
 }
 
 /* Change column settings depending on screen size */
@@ -90,13 +102,7 @@
         max-width: 47ch;
         text-align: center;
     }
-    .list-text h3 {
-        margin-left: -12%;
-        font-size: clamp(1rem, 3vw, 1.6rem);
-    }
-    .list-text ul li {
-        font-size: clamp(0.8rem, 2vw, 1.3rem);
-    }  
+      
 }
    
 

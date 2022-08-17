@@ -11,7 +11,7 @@
     
                ?>
 
-<article>
+<article class="margin-bottom">
 
 <!-- Link to single page-->
 <a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
@@ -21,7 +21,7 @@
     <div class="list-image">
             <?php 
                 if(has_post_thumbnail()) {
-                    the_post_thumbnail('small'); 
+                    the_post_thumbnail(); 
 
                 }
                 ?>

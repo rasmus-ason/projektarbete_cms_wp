@@ -18,7 +18,7 @@
     <div class="staff-page">
         <?php 
             if(has_post_thumbnail()) {
-                the_post_thumbnail('small'); 
+                the_post_thumbnail(); 
 
             }?>
                 <h3 class="beige-heading"><?php the_title()?></h3><?php
@@ -36,7 +36,7 @@
 
 <!-- Link to contact page -->
 <div class="large-buttons">
-<a href="http://localhost/pals/wordpress/contact/">Go to contact Page</a>
+<a href="https://studenter.miun.se/~raan2100/writeable/dt197g_projekt/wordpress/contact/">Go to contact Page</a>
 </div>
 
 

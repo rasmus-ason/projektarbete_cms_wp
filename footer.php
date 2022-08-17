@@ -12,7 +12,9 @@
     <?php  
     if(is_active_sidebar('footer-content-phonenumber')) : ?>
         <div id="footer-content-phonenumber">
+         
             <?php dynamic_sidebar('footer-content-phonenumber'); ?>
+         
         </div><?php
     endif; ?>
 
@@ -21,14 +23,16 @@
     <?php  
     if(is_active_sidebar('footer-content-email')) : ?>
         <div id="footer-content-email">
+         
             <?php dynamic_sidebar('footer-content-email'); ?>
+         
         </div><?php
     endif; ?>
 
     <br><p>OR</p><br>
 
 <!-- Link to contact page-->
-<a href="http://localhost/pals/wordpress/contact/">Go to contact Page</a>
+<a href="https://studenter.miun.se/~raan2100/writeable/dt197g_projekt/wordpress/contact/">Go to contact Page</a>
 
     
     

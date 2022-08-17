@@ -65,7 +65,9 @@
             if(is_active_sidebar('breadcrumbs')) : ?>
             <div class="breadcrumbs">
                 <div id="breadcrumbs">
-                    <?php dynamic_sidebar('breadcrumbs'); ?>
+                
+                        <?php dynamic_sidebar('breadcrumbs'); ?>
+                  
                 </div>
             </div>
             <?php

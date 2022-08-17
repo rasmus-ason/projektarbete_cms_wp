@@ -66,9 +66,9 @@ include(TEMPLATEPATH . '/single-staff.php');
                             <div id="rental-search">
                                 <?php dynamic_sidebar('rental-search'); ?>
                         </div><?php endif; ?>
-
+                        </div>
             <?php endif; ?>
-        </div>
+        
 
 <!-- Displays only if category is activities-->         
     <?php  

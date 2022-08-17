@@ -6,7 +6,7 @@
     background-color: #fff;
     color: #000;
     border-style: none;
-    width: 100%;
+    width: 95%;
     border: solid 0.2vw #B8A982;
     box-shadow: 2px 2px 2px #b1b1b1;
     font-family: 'koho', serif;
@@ -19,7 +19,8 @@
     background-color: #61978d;
     border-style: none;
     color: #fff;
-    width: 101.5%;
+    width: 95%;
+    margin-left: 1%;
     padding-top: 1vh;
     padding-bottom: 1vh;
     font-size: clamp(0.9rem, 2vw, 1.2rem);
@@ -39,13 +40,13 @@
 
 /* CSS for contact form */
 .contact-form{
-    width: max(300px, 50vw);
+    width: max(280px, 45vw);
     margin: auto;
     background-color: #ffffff;
     padding: 4%;
     margin-bottom: 10%;
-    border: solid 1.3vw #B8A982;
-    margin-top: 10%;
+    border: solid 7px #B8A982;
+    margin-top: 15%;
     list-style: none;
 }
 
@@ -67,10 +68,8 @@
     grid-template-rows: repeat(10, auto);
     grid-auto-flow: dense;
     gap: 20px;
-    background-color: #f4f4f4;
     padding: 3%;
     height: fit-content;
-    margin-bottom: 10%;
     transition: all 2s;
 }
 
@@ -97,16 +96,11 @@
 
 }
 
-.staff-page-container:hover {
-    background-color: #d8d8d8;
-    transition: all 2s;
-}
-
 
 .staff-page {
     width: 100%;
     margin: auto;
-    height: 300px;
+    height: 280px;
     background-color: #34695f;
     padding: 5px;
     

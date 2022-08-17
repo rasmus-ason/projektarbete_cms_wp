@@ -11,7 +11,7 @@
     
                ?>
 <!-- Inside content start tag-->
-<article>
+<article class="margin-bottom">
 
     <a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
     <div class="list-container">
@@ -20,22 +20,25 @@
     <div class="list-image">
             <?php 
                 if(has_post_thumbnail()) {
-                    the_post_thumbnail('small'); 
+                    the_post_thumbnail(); 
 
                 }
                 ?>
         </div>
 
         <!--Text about accomondation-->
-        <div class="list-text hide-p-text">
+        <div class="list-text">
      
             <h3><?php the_title(); ?></h3>
             
-                <?php the_content(); ?>
+             <div class="hide-p-text">
+                <?php the_excerpt(); ?>
+             </div>
+                
             
                 
             </div>
-        </div>
+        <!-- </div> -->
         
     </div>
     </a>

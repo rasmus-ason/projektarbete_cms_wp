@@ -2,11 +2,12 @@
 body {
     margin: 0;
     list-style: none;
+
+    
 }
 
 .top-heading {
-    margin-top: 17vh;
-    
+    margin-top: 15%;  
 }
 
 main {
@@ -51,6 +52,7 @@ font-size: clamp(0.65rem, 2vw, 1rem);
 background-color: #70a99e;
 color: #fff;
 }
+
 
 
 /* Inside content on pages - display flex*/
@@ -124,17 +126,19 @@ color: #fff;
 /*Large buttons settings*/
  .large-buttons {
     margin: auto;
-    background-color: #465C7B;
-    width: max(170px, 40vw);
+    background-color: #1d3e38;
+    width: max(280px, 45vw);
     border-style: none;
     margin-bottom: 4vh;
-    margin-top: -5vh;
+    margin-top: -10vh;
+    margin-bottom: 8vh;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: clamp(0.9rem, 2vw, 1.3rem);
     text-transform: uppercase;
-    box-shadow: 2px 2px 2px #797979;
+    box-shadow: 2px 2px 2px #193c36;
     text-align: center;
+    transition: all 2s;
 }
 
 .large-buttons a {
@@ -146,7 +150,7 @@ color: #fff;
 
 .large-buttons:hover {
     cursor: pointer;
-    background-color: #246aa0;
+    background-color: #40665f;
     transition: all 2s;
 } 
 
@@ -192,6 +196,8 @@ color: #fff;
     padding-bottom: 7%;
     
 }
+
+
 
 .review-display-box {
     margin: auto;

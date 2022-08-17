@@ -11,7 +11,7 @@
     
                ?>
 
-<article>
+<article class="margin-bottom">
 
 <!-- Link to single page-->
 <a class="list-link" style="text-decoration:none" href="<?php the_permalink(); ?>" >
@@ -21,19 +21,22 @@
     <div class="list-image">
             <?php 
                 if(has_post_thumbnail()) {
-                    the_post_thumbnail('small'); 
+                    the_post_thumbnail(); 
 
                 }
                 ?>
         </div>
 
+        <div>
+        <h3><?php the_title(); ?></h3>
         <!--Text about accomondation-->
         <div class="list-text news-text-excerpt">
      
-            <h3><?php the_title(); ?></h3>
+            
             
                 <?php the_excerpt(); ?>
         
+        </div>
         </div>
         
     </div>

@@ -24,7 +24,9 @@
     <article class="front-page-puff-container">
         <div class="front-page-puff">
             <div id="front-page-puff">
-                <?php dynamic_sidebar('front-page-puff'); ?>
+               
+                    <?php dynamic_sidebar('front-page-puff'); ?>
+               
             </div>
         </div>
     </article>
@@ -34,29 +36,61 @@ endif; ?>
 <!--Front Page Links -->
 <section>
     <div class="image-link-container">
-
-    <?php  
-            query_posts('category_name=Frontpagelinks&posts_per_page=6');
-            if(have_posts()) {
-                while(have_posts()) {
-                    the_post();
-            ?>
-
         <div class="image-link">
             <?php 
-                if(has_post_thumbnail()) {
-                    the_post_thumbnail(); 
-                    }
-                ?>
-
-                <a href="<?php the_permalink();?>">
-            <h2><?php the_title();?></h2></a>
+            if(is_active_sidebar('frontpagelinks-1')) : ?>
+                    <div id="frontpagelinks-1">
+                            <?php dynamic_sidebar('frontpagelinks-1'); ?>
+                        <h2>Villas</h2>
+                    </div>
+                    <?php
+            endif; ?>
+                
         </div>
-        <?php
-                }
-            }
-        ?> 
-    </div> 
+        
+    
+
+    <!-- <div class="image-link-container"> -->
+        <div class="image-link">
+            <?php 
+            if(is_active_sidebar('frontpagelinks-2')) : ?>
+                    <div id="frontpagelinks-2">
+                        <?php dynamic_sidebar('frontpagelinks-2'); ?>
+                        <h2>Guesthouse</h2>
+                    </div>
+                    <?php
+            endif; ?>
+        </div>
+        
+    
+
+    <!-- <div class="image-link-container"> -->
+        <div class="image-link">
+            <?php 
+            if(is_active_sidebar('frontpagelinks-3')) : ?>
+                    <div id="frontpagelinks-3">
+                        <?php dynamic_sidebar('frontpagelinks-3'); ?>
+                        <h2>Activities</h2>
+                    </div>
+                    <?php
+            endif; ?>
+        </div>
+        
+    
+
+    <!-- <div class="image-link-container"> -->
+        <div class="image-link">
+            <?php 
+            if(is_active_sidebar('frontpagelinks-4')) : ?>
+                    <div id="frontpagelinks-4">
+                        <?php dynamic_sidebar('frontpagelinks-4'); ?>
+                        <h2>Contact</h2>
+                    </div>
+                <?php
+            endif; ?>
+        </div>
+    <!--Container closing tag-->
+    </div>
 </section>
 
 <!-- 4 latest news section -->
@@ -102,7 +136,9 @@ endif; ?>
         <?php  
     if(is_active_sidebar('site-review-summary')) : ?>
         <div id="site-review-summary">
+        
             <?php dynamic_sidebar('site-review-summary'); ?>
+       
         </div><?php
     endif; ?>
     </div>

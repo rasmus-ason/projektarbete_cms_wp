@@ -26,7 +26,9 @@ $args = array(
     'height' => 600,
     'uploads' => true, 
 );
+
 add_theme_support('custom-header', $args);
+
 
 //Activate widget-area
 add_action('widgets_init', 'pals_widget_init');
@@ -97,6 +99,22 @@ function pals_widget_init() {
         'id'                => 'breadcrumbs',
         'before-widget'     => '<div>',
         'after-widget'      => '</div>'
+    ));
+    register_sidebar(array(
+        'name'              => 'frontpagelinks-1',
+        'id'                => 'frontpagelinks-1'
+    ));
+    register_sidebar(array(
+        'name'              => 'frontpagelinks-2',
+        'id'                => 'frontpagelinks-2'
+    ));
+    register_sidebar(array(
+        'name'              => 'frontpagelinks-3',
+        'id'                => 'frontpagelinks-3'
+    ));
+    register_sidebar(array(
+        'name'              => 'frontpagelinks-4',
+        'id'                => 'frontpagelinks-4'
     ));
 }
 
