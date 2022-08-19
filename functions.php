@@ -14,10 +14,12 @@ function register_my_menus() {
 add_theme_support('post-thumbnails');
 
 //Custom sizes
-add_image_size('medium', 640, 640, array('center', 'center'));
-add_image_size('small', 256, 9999, array('center', 'center'));
 add_image_size('singlepageimage', 9999, 500);
-add_image_size('headerimage', 1600, 750, array('center', 'center'));
+
+
+// add_image_size('medium', 640, 640, array('center', 'center'));
+// add_image_size('small', 256, 9999, array('center', 'center'));
+// add_image_size('headerimage', 1600, 750, array('center', 'center'));
 
 //Activate header image
 $args = array(

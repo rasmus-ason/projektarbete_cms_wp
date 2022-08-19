@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page-with-headerimage
+Template Name: Page-with-headerimage-no-image
 */
 ?>
 
@@ -14,16 +14,7 @@ Template Name: Page-with-headerimage
             </div>
 
 <!--Content -->
-<div class="inside-content">
-    <div class="inside-content-image">
-
-    <?php 
-            if(has_post_thumbnail()) {
-                the_post_thumbnail(); 
-            }
-            ?>
-</div>
-        <div class="inside-content-text">
+<div class="subpage-no-image">
         <?php 
         if(have_posts()) : 
             while(have_posts()) : ?>
@@ -34,7 +25,6 @@ Template Name: Page-with-headerimage
             endwhile;
         endif;
         ?>
-        </div>
 
         
 

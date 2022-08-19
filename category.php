@@ -1,7 +1,14 @@
 <!-- Category page for accomondation-->
 <?php get_header() ?>
 
-<h2 class="beige-heading top-heading" >See our Accomondations</h2>
+<h2 class="beige-heading top-heading"><?php get_the_category(); ?> <?php
+    $categories = get_the_category();
+    if ( ! empty($categories) ) {
+        foreach ( $categories as $term ) {
+            echo esc_html( $term->name ) . ' ';
+        }
+    }
+?></h2>
 
 <!-- The loop-->
 <?php 
@@ -29,11 +36,9 @@
         <!--Text about accomondation-->
         <div class="list-text">
      
-            <h3><?php the_title(); ?></h3>
+            <h2><?php the_title(); ?></h2>
             
-             <div class="hide-p-text">
                 <?php the_excerpt(); ?>
-             </div>
                 
             
                 

@@ -111,35 +111,27 @@ endif; ?>
 <section>
     <h2 class="beige-heading">Latest news from Pals Villas</h2>
         <div class="news-frontpage-container">
-
         <?php 
             query_posts('category_name=News&posts_per_page=4');
             if(have_posts()) {
                 while(have_posts()) {
                     the_post();
             ?>
-
             <div>
                 <div class="news-frontpage">
                     <?php 
                     if(has_post_thumbnail()) {
                         the_post_thumbnail(); 
 
-                    }
-                    ?>
-                    
+                    }?>
+                    <h3><?php the_title(); ?></h3>
                     <?php the_excerpt(); ?>
                     <div class="news-frontpage-buttons">
                         <a href="<?php the_permalink(); ?>" class="news-button">Read article</a>
                     </div>
                 </div>
                 </div>
-
-            <?php
-                }
-            }
-            ?> 
-            
+            <?php } } ?>       
         </div>
 </section>
 

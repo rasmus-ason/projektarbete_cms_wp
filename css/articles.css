@@ -31,6 +31,15 @@
     font-size: clamp(0.65rem, 1.5vw, 0.85rem);
 }
 
+.news-frontpage h3 {
+    font-size: clamp(0.65rem, 1.5vw, 0.9rem);
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: -5px;
+    color: #fff;
+}
+
+
 .news-frontpage-buttons a { 
     font-family: 'Jacques Francois', serif;
     text-transform: uppercase;
