@@ -1,4 +1,5 @@
 # Projektarbete - Webbutveckling för CMS
+Repo innehåller tema-filer med namnet Palsvillas till en Wordpress-webbplats. 
 
 ## Webbplatsens php-filer och dess syfte
 
